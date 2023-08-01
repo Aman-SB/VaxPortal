@@ -1,7 +1,6 @@
 package com.example.VaxPortal.service;
 
 import com.example.VaxPortal.Dto.RequestDto.BookDose1RequestDto;
-import com.example.VaxPortal.Enumerator.DoseType;
 import com.example.VaxPortal.Exception.DoseAlreadyTaken;
 import com.example.VaxPortal.Exception.PersonNotFound;
 import com.example.VaxPortal.model.Dose;

@@ -1,12 +1,12 @@
 package com.example.VaxPortal.model;
 
 import com.example.VaxPortal.Enumerator.CenterType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @NoArgsConstructor
@@ -22,7 +22,11 @@ public class VaccinationCenter {
 
     String centerName;
 
+    @Enumerated(EnumType.STRING)
     CenterType centerType;
 
     String address;
+
+    @OneToMany(mappedBy = "center",cascade = CascadeType.ALL)
+    List<Doctor> doctors = new ArrayList<>();
 }
