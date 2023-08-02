@@ -24,8 +24,6 @@ public class Appointment {
     @CreationTimestamp
     Date appointmentDate;
 
-    int doseNo;
-
     @ManyToOne
     @JoinColumn
     Person person;
