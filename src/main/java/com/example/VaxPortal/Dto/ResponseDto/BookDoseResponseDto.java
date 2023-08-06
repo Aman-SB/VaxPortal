@@ -8,7 +8,7 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @Getter
 @Setter
-public class BookDose1ResponseDto {
+public class BookDoseResponseDto {
 
     String message;
 }

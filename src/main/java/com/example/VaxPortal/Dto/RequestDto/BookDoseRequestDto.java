@@ -9,7 +9,7 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @Getter
 @Setter
-public class BookDose1RequestDto {
+public class BookDoseRequestDto {
 
     int personId;
 
